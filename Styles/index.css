@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Comic Sans MS";
 }
 
 a:link, a:visited, a:active {
@@ -13,20 +14,21 @@ body {
 
 .header {
   display: grid;
-  grid-template-columns: 19vw 81vw;
-  grid-template-rows: 5vw 4vw;
+  grid-template-columns: 13vw 81vw;
+  grid-template-rows: 2.5vw 3vw;
   flex-flow: column wrap;
   background-color: rgb(219,112,147);
   background-position: 0px;
-  position: sticky;
+  position: fixed;
   width: 100vw;
   z-index: 2;
+  top: 0;
 }
 
 .header__nav {
   grid-column: 2 / 2;
   background-color: rgb(219,112,147);
-  margin-top: 0.7vw;
+  margin-top: 0.5vw;
   left: 20%;
   flex-wrap: nowrap;
   flex-direction: row;
@@ -34,8 +36,8 @@ body {
 
 .header__logo {
   grid-column: 1;
-  width: 150px;
-  display: inline-block;
+  height: 7vw;
+  display: flex;
 }
 
 .header__logo:hover {
@@ -43,7 +45,8 @@ body {
 }
 
 .header__logo img {
-  width: 19vw;
+  width: auto;
+  height: 5.5vw;
   margin-left: 0vw;
   animation: slide-in-left 1.5s cubic-bezier(0.25, 0.46, 0.47, 0.99) both;
 }
@@ -57,16 +60,15 @@ body {
 .header__nav__lista__menu {
   grid-area: menu;
   color: #fff;
-  text-decoration: none;
-  font-family: "Comic Sans MS";
-  font-size: 2vw;
-  font-weight: 500;
-  margin: 10px;
+  margin: 8px;
+  margin-left: 0.4vw;
   top: 3%;
+  font-size: 1.4vw;
+  font: icon;
 }
 
 .header__nav__lista__menu:hover {
-  color: coral;
+  color: rgb(236 24 94);
 }
 
 .header__nav__lista {
@@ -76,11 +78,39 @@ body {
 .header__nav__buscador{
   grid-column: 2;
   padding: 0.2rem;
-  margin-left: 0.3rem;
   display: flex;
   justify-content: flex-start;
   align-content: stretch;
-  height: 3vw;
+  height: 2vw;
+}
+
+.header__nav__buscador__pay {
+  margin-left: 3vw;
+  display: grid;
+  grid-template-columns: 3vw 14vw;
+  grid-template-rows: 2.5vw;
+  align-content: center;
+  align-items: center;
+}
+
+.header__nav__buscador__pay__summary {
+  display: flex;
+  color: white;
+  fill: white;
+}
+
+.header__nav__buscador__pay__item {
+  display: flex;
+  margin-left: 1.3vw;
+  color: white;
+}
+
+.header__nav__buscador__pay__item__cantidad {
+  margin: 2vw;
+}
+
+main {
+  margin-top: 6vw;
 }
 
 .SeccionOne {

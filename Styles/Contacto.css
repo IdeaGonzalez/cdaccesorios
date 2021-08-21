@@ -1,44 +1,52 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Comic Sans MS";
+}
+
+a:link, a:visited, a:active {
+  text-decoration:none;
+}
+
+body {
+  background-color: rgb(242, 242, 242);
 }
 
 .header {
   display: grid;
-  grid-template-columns: 10rem 50rem;
-  grid-template-rows: 2.5rem 2rem;
+  grid-template-columns: 13vw 81vw;
+  grid-template-rows: 2.5vw 3vw;
   flex-flow: column wrap;
   background-color: rgb(219,112,147);
   background-position: 0px;
-  position: sticky;
-  width: 100%;
+  position: fixed;
+  width: 100vw;
   z-index: 2;
-  height: 4.7rem;
+  top: 0;
 }
 
 .header__nav {
-  display: grid;
-  grid-template-columns: 10rem 50rem;
-  grid-template-rows: 2.5rem 2rem;
-  flex-flow: column wrap;
-  grid-template-areas:
-      "logo nav__menu"
-      "logo nav__buscador";
+  grid-column: 2 / 2;
   background-color: rgb(219,112,147);
-  top: 3%;
+  margin-top: 0.5vw;
   left: 20%;
   flex-wrap: nowrap;
   flex-direction: row;
 }
 
 .header__logo {
-  grid-area: logo;
-  width: 150px;
-  display: inline-block;
+  grid-column: 1;
+  height: 7vw;
+  display: flex;
+}
+
+.header__logo:hover {
+  animation: slide-in-left 1.5s cubic-bezier(0.25, 0.46, 0.47, 0.99) both;  
 }
 
 .header__logo img {
-  width: 9.5rem;
+  width: auto;
+  height: 5.5vw;
   margin-left: 0vw;
   animation: slide-in-left 1.5s cubic-bezier(0.25, 0.46, 0.47, 0.99) both;
 }
@@ -52,12 +60,15 @@
 .header__nav__lista__menu {
   grid-area: menu;
   color: #fff;
-  text-decoration: none;
-  font-family: "Comic Sans MS";
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 10px;
-  top:3%
+  margin: 8px;
+  margin-left: 0.4vw;
+  top: 3%;
+  font-size: 1.4vw;
+  font: icon;
+}
+
+.header__nav__lista__menu:hover {
+  color: rgb(236 24 94);
 }
 
 .header__nav__lista {
@@ -65,10 +76,175 @@
 }
 
 .header__nav__buscador{
-  grid-area: nav__buscador;
+  grid-column: 2;
   padding: 0.2rem;
-  margin-left: 0.6rem;
   display: flex;
-  align-content: stretch;
   justify-content: flex-start;
+  align-content: stretch;
+  height: 2vw;
+}
+
+.header__nav__buscador__pay {
+  margin-left: 3vw;
+  display: grid;
+  grid-template-columns: 3vw 14vw;
+  grid-template-rows: 2.5vw;
+  align-content: center;
+  align-items: center;
+}
+
+.header__nav__buscador__pay__summary {
+  display: flex;
+  color: white;
+  fill: white;
+}
+
+.header__nav__buscador__pay__item {
+  display: flex;
+  margin-left: 1.3vw;
+  color: white;
+}
+
+.header__nav__buscador__pay__item__cantidad {
+  margin: 2vw;
+}
+
+main {
+  margin-top: 6vw;
+  color: rgb(219 112 147);
+  height: max-content;
+  padding: 3vh 0 3vh 0;
+}
+
+h2 {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.section-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 65vw;
+  margin: 3vh 0 3vh 0;
+  box-sizing: border-box;
+}
+
+.row {
+  display: -webkit-box;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col {
+  -webkit-box-flex: 1;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.form-group label {
+  margin: 2rem 0 0 0;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-check {
+  position: relative;
+  display: block;
+  padding-left: 1.25rem;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.Maps {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4vw;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 6vw 2vw;
+  height: auto;
+  grid-auto-rows: 1fr 1fr;
+  gap: 0 2%;
+  grid-template-areas:
+    "SocialMedia"
+    "LeyedaFoot";
+}
+
+.socialMedia {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  background-color: palevioletred;
+  margin: 1vh;
+  padding-top: 0.3vw;
+  height: 5vw;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.socialMedia li a img {
+  width: 4vw;
+  height: auto;
+}
+
+.socialMedia li a img:hover {
+  width: 5vw;
+}
+
+.LeyendaFoot {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: auto;
+  font-size: 1.4vw;
+  font-family: "Comic Sans MS";
+  color: gray;
 }

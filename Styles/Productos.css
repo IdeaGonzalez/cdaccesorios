@@ -1,44 +1,52 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Comic Sans MS";
+}
+
+a:link, a:visited, a:active {
+  text-decoration:none;
+}
+
+body {
+  background-color: rgb(242, 242, 242);
 }
 
 .header {
   display: grid;
-  grid-template-columns: 10rem 50rem;
-  grid-template-rows: 2.5rem 2rem;
+  grid-template-columns: 13vw 81vw;
+  grid-template-rows: 2.5vw 3vw;
   flex-flow: column wrap;
   background-color: rgb(219,112,147);
   background-position: 0px;
-  position: sticky;
-  width: 100%;
+  position: fixed;
+  width: 100vw;
   z-index: 2;
-  height: 4.7rem;
+  top: 0;
 }
 
 .header__nav {
-  display: grid;
-  grid-template-columns: 10rem 50rem;
-  grid-template-rows: 2.5rem 2rem;
-  flex-flow: column wrap;
-  grid-template-areas:
-      "logo nav__menu"
-      "logo nav__buscador";
+  grid-column: 2 / 2;
   background-color: rgb(219,112,147);
-  top: 3%;
+  margin-top: 0.5vw;
   left: 20%;
   flex-wrap: nowrap;
   flex-direction: row;
 }
 
 .header__logo {
-  grid-area: logo;
-  width: 150px;
-  display: inline-block;
+  grid-column: 1;
+  height: 7vw;
+  display: flex;
+}
+
+.header__logo:hover {
+  animation: slide-in-left 1.5s cubic-bezier(0.25, 0.46, 0.47, 0.99) both;  
 }
 
 .header__logo img {
-  width: 9.5rem;
+  width: auto;
+  height: 5.5vw;
   margin-left: 0vw;
   animation: slide-in-left 1.5s cubic-bezier(0.25, 0.46, 0.47, 0.99) both;
 }
@@ -52,12 +60,15 @@
 .header__nav__lista__menu {
   grid-area: menu;
   color: #fff;
-  text-decoration: none;
-  font-family: "Comic Sans MS";
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 10px;
-  top:3%
+  margin: 8px;
+  margin-left: 0.4vw;
+  top: 3%;
+  font-size: 1.4vw;
+  font: icon;
+}
+
+.header__nav__lista__menu:hover {
+  color: rgb(236 24 94);
 }
 
 .header__nav__lista {
@@ -65,10 +76,470 @@
 }
 
 .header__nav__buscador{
-  grid-area: nav__buscador;
+  grid-column: 2;
   padding: 0.2rem;
-  margin-left: 0.6rem;
   display: flex;
-  align-content: stretch;
   justify-content: flex-start;
+  align-content: stretch;
+  height: 2vw;
+}
+
+.header__nav__buscador__pay {
+  margin-left: 3vw;
+  display: grid;
+  grid-template-columns: 3vw 14vw;
+  grid-template-rows: 2.5vw;
+  align-content: center;
+  align-items: center;
+}
+
+.header__nav__buscador__pay__summary {
+  display: flex;
+  color: white;
+  fill: white;
+}
+
+.header__nav__buscador__pay__item {
+  display: flex;
+  margin-left: 1.3vw;
+  color: white;
+}
+
+.header__nav__buscador__pay__item__cantidad {
+  margin: 2vw;
+}
+
+main {
+  margin-top: 8vw;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Comic Sans MS";
+  font-size: 2vw;
+  background-color: rgb(242, 242, 242)
+}
+
+.Seccionone {
+  background-color: white;
+}
+
+.Seccionone__Information {
+  width: 30vw;
+}
+
+.Seccionone__Information__table {
+  width: 50vw;
+  margin-left: 17.094017094017094%;
+}
+
+.Cat1T {
+  color: palevioletred;
+  font-family: "Comic Sans MS";
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.Cat1 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 1fr;
+  grid-auto-rows: 1fr 1fr;
+  gap: 0 1%;
+  grid-auto-flow: row;
+  grid-template-areas: "Cat1__A1 Cat1__A2 Cat1__A3 Cat1__A4";
+  width: auto;
+  overflow: hidden;
+  font-family: "Comic Sans MS";
+  align-items: center;
+  justify-content: center;
+}
+
+.Cat1__A1 {
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: auto;
+  height: 30vw;
+  margin-left: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 25px;
+  color: #FFFFFF;
+  background-color: rgb(219,112,147);
+  padding: 5px;
+  border-radius: 15px;
+  transition: all 0.8s;
+}
+
+.Cat1__A2 {
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: auto;
+  height: 30vw;
+  margin-left: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 25px;
+  color: #FFFFFF;
+  background-color: rgb(219,112,147);
+  padding: 5px;
+  border-radius: 15px;
+  transition: all 0.8s;
+}
+
+.Cat1__A3 { 
+  grid-column: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: auto;
+  height: 30vw;
+  margin-left: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 25px;
+  color: #FFFFFF;
+  background-color: rgb(219,112,147);
+  padding: 5px;
+  border-radius: 15px;
+  transition: all 0.8s;
+}
+
+.Cat1__A4 { 
+  grid-column: 4 / 4;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: auto;
+  height: 30vw;
+  margin-left: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 25px;
+  color: #FFFFFF;
+  background-color: rgb(219,112,147);
+  padding: 5px;
+  border-radius: 15px;
+  transition: all 0.8s;
+}
+
+.Cat1__A1:hover {
+  margin: 3vw;
+}
+
+.Cat1__A2:hover {
+  margin: 3vw;
+}
+
+.Cat1__A3:hover {
+  margin: 3vw;
+}
+
+.Cat1__A4:hover {
+  margin: 3vw;
+}
+
+.Cat1 div img {
+  display: flex;
+  width: 19vw;
+  align-items: center;
+  height: 28vw;
+  margin: 1.5vw;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.Cat2T {
+  color: palevioletred;
+  font-family: "Comic Sans MS";
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.Cat2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 1fr;
+  grid-auto-rows: 1fr 1fr;
+  gap: 0 1%;
+  grid-auto-flow: row;
+  grid-template-areas: "Cat1__A1 Cat1__A2 Cat1__A3 Cat1__A4";
+  width: auto;
+  overflow: hidden;
+  font-family: "Comic Sans MS";
+  align-items: center;
+  justify-content: center;
+}
+
+.Cat2__A1 {
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: auto;
+  height: 30vw;
+  margin-left: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 25px;
+  color: #FFFFFF;
+  background-color: rgb(219,112,147);
+  padding: 5px;
+  border-radius: 15px;
+  transition: all 0.8s;
+}
+
+.Cat2__A2 {
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: auto;
+  height: 30vw;
+  margin-left: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 25px;
+  color: #FFFFFF;
+  background-color: rgb(219,112,147);
+  padding: 5px;
+  border-radius: 15px;
+  transition: all 0.8s;
+}
+
+.Cat2__A3 { 
+  grid-column: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: auto;
+  height: 30vw;
+  margin-left: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 25px;
+  color: #FFFFFF;
+  background-color: rgb(219,112,147);
+  padding: 5px;
+  border-radius: 15px;
+  transition: all 0.8s;
+}
+
+.Cat2__A4 { 
+  grid-column: 4 / 4;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: auto;
+  height: 30vw;
+  margin-left: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 25px;
+  color: #FFFFFF;
+  background-color: rgb(219,112,147);
+  padding: 5px;
+  border-radius: 15px;
+  transition: all 0.8s;
+}
+
+.Cat2__A1:hover {
+  margin: 3vw;
+}
+
+.Cat2__A2:hover {
+  margin: 3vw;
+}
+
+.Cat2__A3:hover {
+  margin: 3vw;
+}
+
+.Cat2__A4:hover {
+  margin: 3vw;
+}
+
+.Cat2 div img {
+  display: flex;
+  width: 19vw;
+  align-items: center;
+  height: 28vw;
+  margin: 1.5vw;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.Cat3T {
+  color: palevioletred;
+  font-family: "Comic Sans MS";
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.Cat3 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 1fr;
+  grid-auto-rows: 1fr 1fr;
+  gap: 0 1%;
+  grid-auto-flow: row;
+  grid-template-areas: "Cat1__A1 Cat1__A2 Cat1__A3 Cat1__A4";
+  width: auto;
+  overflow: hidden;
+  font-family: "Comic Sans MS";
+  align-items: center;
+  justify-content: center;
+}
+
+.Cat3__A1 {
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: auto;
+  height: 30vw;
+  margin-left: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 25px;
+  color: #FFFFFF;
+  background-color: rgb(219,112,147);
+  padding: 5px;
+  border-radius: 15px;
+  transition: all 0.8s;
+}
+
+.Cat3__A2 {
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: auto;
+  height: 30vw;
+  margin-left: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 25px;
+  color: #FFFFFF;
+  background-color: rgb(219,112,147);
+  padding: 5px;
+  border-radius: 15px;
+  transition: all 0.8s;
+}
+
+.Cat3__A3 { 
+  grid-column: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: auto;
+  height: 30vw;
+  margin-left: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 25px;
+  color: #FFFFFF;
+  background-color: rgb(219,112,147);
+  padding: 5px;
+  border-radius: 15px;
+  transition: all 0.8s;
+}
+
+.Cat3__A4 { 
+  grid-column: 4 / 4;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: auto;
+  height: 30vw;
+  margin-left: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 25px;
+  color: #FFFFFF;
+  background-color: rgb(219,112,147);
+  padding: 5px;
+  border-radius: 15px;
+  transition: all 0.8s;
+}
+
+.Cat3__A1:hover {
+  margin: 3vw;
+}
+
+.Cat3__A2:hover {
+  margin: 3vw;
+}
+
+.Cat3__A3:hover {
+  margin: 3vw;
+}
+
+.Cat3__A4:hover {
+  margin: 3vw;
+}
+
+.Cat3 div img {
+  display: flex;
+  width: 19vw;
+  align-items: center;
+  height: 28vw;
+  margin: 1.5vw;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 6vw 2vw;
+  height: auto;
+  grid-auto-rows: 1fr 1fr;
+  gap: 0 2%;
+  grid-template-areas:
+  "SocialMedia"
+  "LeyedaFoot";
+}
+
+.socialMedia {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  background-color: palevioletred;
+  margin: 1vh;
+  padding-top: 0.3vw;
+  height: 5vw;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.socialMedia li a img {
+  width: 4vw;
+  height: auto;
+}
+
+.socialMedia li a img:hover {
+  width: 5vw;
+}
+
+.LeyendaFoot {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: auto;
+  font-size: 1.4vw;
+  font-family: "Comic Sans MS";
+  color: gray;
 }
