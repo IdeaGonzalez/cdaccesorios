@@ -133,7 +133,7 @@ h1 {
   padding-right: 0.1rem;
 }
 
-.seccionFirst__talles__img {
+.seccionFirst__img {
   width: 30rem;
 }
 
@@ -153,7 +153,7 @@ h2 {
   color: #db7093;
 }
 
-.seccionFirst__product-single__skills {
+.seccionFirst__info__product-single__skills {
   background-color: white;
   width: 23rem;
   display: grid;
@@ -164,7 +164,7 @@ h2 {
   align-items: center;
 }
 
-.seccionFirst__product-single__skills__item span {
+.seccionFirst__info__product-single__skills__item span {
   max-width: 75px;
   display: block;
   font-size: 8px;
@@ -209,7 +209,7 @@ h3 {
     padding: 0.3rem;
     background-color: #db7093;
   }
-  .seccionFirst__product-single__skills {
+  .seccionFirst__info__product-single__skills {
     display: none;
   }
   h2 {
