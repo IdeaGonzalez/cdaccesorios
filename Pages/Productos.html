@@ -4,139 +4,205 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="accesorios, joyas, plata, anillos, aros">
+    <link rel="icon" href="../Multimedia/Images/CP Accesorios - ICON.ico">
     <link rel = "preconnect" href = "https://fonts.googleapis.com">
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
     <link href = "https: //fonts.googleapis.com/css2? family = Prosto + One & display = swap "rel =" stylesheet ">   
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../Styles/Productos.css">
     <title>CPAccesorios | Productos</title>
 </head>
 <body>
     <header>
-        <nav class="header">
-            <a class="header__logo" href="../index.html">
-                <img src="..//Multimedia/Images/CP Accesorios.png" alt="Logo CD Accesorios">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">
+                <img class="header__logo" src="../Multimedia/Images/CP Accesorios.png" alt="Logo CD Accesorios">
             </a>
-            <div class="header__nav">
-                <ul >
-                    <li class="header__nav__lista"><a class="header__nav__lista__menu" href="../index.html" >Inicio</a></li>
-                    <li class="header__nav__lista"><a class="header__nav__lista__menu" href="./Tabla-de-talles.html">Tabla de talles</a></li>
-                    <li class="header__nav__lista"><a class="header__nav__lista__menu" href="./Productos.html">Productos</a></li>
-                    <li class="header__nav__lista"><a class="header__nav__lista__menu" href="./Compras-y-envios.html">Compras y envíos</a></li>
-                    <li class="header__nav__lista"><a class="header__nav__lista__menu" href="./Contacto.html">Contacto</a></li>     
-                </ul>
-            </div>
-            <div class= "header__nav__buscador">
-                <form action="#" method="get"></form>
-                <input type="search" id="busqueda" name="q" placeholder="Estoy buscando..."/>
-                <input type="submit" value="Buscar"/>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+                  </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="./Productos.html">Productos</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link disabled" href="./Compras-y-envios.html">Compras y envíos</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link disabled" href="./Contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Estoy buscando..." aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                 <div>
-                    <a href="#"  class="header__nav__buscador__pay">
-                        <div class="header__nav__buscador__pay__summary">
-                            <svg baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="598 -476.1 1792 1792"><path d="M1302 1059.9c0 34.7-12.7 64.7-38 90s-55.3 38-90 38-64.7-12.7-90-38-38-55.3-38-90 12.7-64.7 38-90 55.3-38 90-38 64.7 12.7 90 38 38 55.3 38 90zm896 0c0 34.7-12.7 64.7-38 90s-55.3 38-90 38-64.7-12.7-90-38-38-55.3-38-90 12.7-64.7 38-90 55.3-38 90-38 64.7 12.7 90 38 38 55.3 38 90zm128-1088v512c0 16-5.5 30.2-16.5 42.5s-24.5 19.5-40.5 21.5l-1044 122c8.7 40 13 63.3 13 70 0 10.7-8 32-24 64h920c17.3 0 32.3 6.3 45 19s19 27.7 19 45-6.3 32.3-19 45-27.7 19-45 19H1110c-17.3 0-32.3-6.3-45-19s-19-27.7-19-45c0-7.3 2.7-17.8 8-31.5s10.7-25.7 16-36 12.5-23.7 21.5-40 14.2-26.2 15.5-29.5l-177-823H726c-17.3 0-32.3-6.3-45-19s-19-27.7-19-45 6.3-32.3 19-45 27.7-19 45-19h256c10.7 0 20.2 2.2 28.5 6.5s14.8 9.5 19.5 15.5 9 14.2 13 24.5 6.7 19 8 26 3.2 16.8 5.5 29.5 3.8 21.3 4.5 26h1201c17.3 0 32.3 6.3 45 19s19 27.7 19 45z"></path></svg>
-                        </div>
-                        <div class="header__nav__buscador__pay__item">
-                            <span>
-                            <span class="header__nav__buscador__pay__item__cantidad">0</span>
-                            </span>
-                            <span class="#">$0,00</span>
-                        </div>
-                    </a> 
+                  <a href="#"  class="header__nav__buscador__pay">
+                    <div class="header__nav__buscador__pay__summary">
+                      <svg baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="598 -476.1 1792 1792"><path d="M1302 1059.9c0 34.7-12.7 64.7-38 90s-55.3 38-90 38-64.7-12.7-90-38-38-55.3-38-90 12.7-64.7 38-90 55.3-38 90-38 64.7 12.7 90 38 38 55.3 38 90zm896 0c0 34.7-12.7 64.7-38 90s-55.3 38-90 38-64.7-12.7-90-38-38-55.3-38-90 12.7-64.7 38-90 55.3-38 90-38 64.7 12.7 90 38 38 55.3 38 90zm128-1088v512c0 16-5.5 30.2-16.5 42.5s-24.5 19.5-40.5 21.5l-1044 122c8.7 40 13 63.3 13 70 0 10.7-8 32-24 64h920c17.3 0 32.3 6.3 45 19s19 27.7 19 45-6.3 32.3-19 45-27.7 19-45 19H1110c-17.3 0-32.3-6.3-45-19s-19-27.7-19-45c0-7.3 2.7-17.8 8-31.5s10.7-25.7 16-36 12.5-23.7 21.5-40 14.2-26.2 15.5-29.5l-177-823H726c-17.3 0-32.3-6.3-45-19s-19-27.7-19-45 6.3-32.3 19-45 27.7-19 45-19h256c10.7 0 20.2 2.2 28.5 6.5s14.8 9.5 19.5 15.5 9 14.2 13 24.5 6.7 19 8 26 3.2 16.8 5.5 29.5 3.8 21.3 4.5 26h1201c17.3 0 32.3 6.3 45 19s19 27.7 19 45z"></path></svg>
+                    </div>
+                    <div class="header__nav__buscador__pay__item">
+                      <span>
+                      <span class="header__nav__buscador__pay__item__cantidad">0</span>
+                      </span>
+                      <span class="#">$0,00</span>
+                    </div>
+                  </a> 
                 </div>
+              </form>
             </div>
         </nav>
-    </header>
-    </header>
+      </header>
     <main>
-        <h1>Combina como quieras y armá tu pedido</h1>
-        <section class="Seccionone">
-            <div class="Seccionone__Information">
-                <img class="Seccionone__Information__table" src="../Multimedia/Images/Information.png" alt="Información">
+        <div class="seccionFirst">
+            <div class="seccionFirst__talles">
+                <img class="seccionFirst__talles__img" src="../Multimedia/Images/Talles.png" alt="Tabla-de-talles">
             </div>
-            <div>
-                <!--Aquí irá enlaces a las categorías de los productos-->
+            <div class="seccionFirst__info">
+                <h2>Nuestros productos</h2>
+                <div class="seccionFirst__product-single__skills"> 
+                    <div class="seccionFirst__product-single__skills__item">
+                        <img src="../Multimedia/Images/product_skill_SILVER925.svg" alt="Plata de 925 - CDAccesorios" class="hd">
+                        <span>Plata<br>925</span>
+                    </div>        
+                    <div class="seccionFirst__product-single__skills__item">
+                        <img src="../Multimedia/Images/product_skill_HANDMADE.svg" alt="Hecho a mano - CDAccesorios" class="hd">
+                        <span>Hecho <br>para ti</span>
+                    </div>
+                    <div class="seccionFirst__product-single__skills__item">
+                        <img src="../Multimedia/Images/product_skill_GUARANTEE.svg" alt="Garantía de 1 año - CDAccesorios" class="hd">
+                        <span>Garantía <br>de 1 año</span>
+                    </div>
+                    <div class="seccionFirst__product-single__skills__item">
+                        <img src="../Multimedia/Images/product_skill_PAYMENT.svg" alt="Pago seguro - CDAccesorios" class="hd">
+                        <span>Pago seguro</span>
+                    </div>
+                    <div class="seccionFirst__product-single__skills__item">
+                        <img src="../Multimedia/Images/product_skill_PACKAGING.svg" alt="Packaging sostenible - CDAccesorios" class="hd">
+                        <span>Packaging <br>de regalo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <!--Aquí irá enlaces a las categorías de los productos-->
+        </div> 
+        <section id="galeria" class="container">
+            <div class="text-center pt-5">
+                <h3 id="Anillos">Anillos</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-nd-6 col-sn-12">
+                    <img src="../Multimedia/Images/Art alas.jpg" alt="Artículo 1"> Anillo 1
+                    <div class="item6 wow animate__ animate__zoomIn animated" style="visibility: visible; animation-name: zoomIn;">
+                        <span class="animate__ animate__heartBeat">$xxx</span>
+                        <button type="button" class="btn btn-primary animate__ animate__zoomIn">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-nd-6 col-sn-12">
+                    <img src="../Multimedia/Images/art piscis.jpeg" alt="Artículo 2"> Anillo 2
+                    <div class="item6 wow animate__ animate__zoomIn animated" style="visibility: visible; animation-name: zoomIn;">
+                        <span class="animate__ animate__heartBeat">$xxx</span>
+                        <button type="button" class="btn btn-primary animate__ animate__zoomIn">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-nd-6 col-sn-12">
+                    <img src="../Multimedia/Images/Artcora.jpg" alt="Artículo 3"> Anillo 3
+                    <div class="item6 wow animate__ animate__zoomIn animated" style="visibility: visible; animation-name: zoomIn;">
+                        <span class="animate__ animate__heartBeat">$xxx</span>
+                        <button type="button" class="btn btn-primary animate__ animate__zoomIn">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-nd-6 col-sn-12">
+                    <img src="../Multimedia/Images/anillo cora.jpeg" alt="Artículo 4"> Anillo 4
+                    <div class="item6 wow animate__ animate__zoomIn animated" style="visibility: visible; animation-name: zoomIn;">
+                        <span class="animate__ animate__heartBeat">$xxx</span>
+                        <button type="button" class="btn btn-primary animate__ animate__zoomIn">Añadir al carrito</button>
+                    </div>
+                </div>
             </div>
         </section>
-        <section>
-            <div class="Cat1T">
-                <h2>Anillos</h2>
+        <section id="galeria" class="container">
+            <div class="text-center pt-5">
+                <h3 id="Aros">Aros</h3>
             </div>
-            <div class="Cat1">
-                <div class= "Cat1__A1">
-                    <a href="#"></a>
-                    <img src="../Multimedia/Images/Art alas.jpg" alt="Artículo 1"> Artículo 1
-                    <input type="submit" class="#" value="Agregar al carrito +">
+            <div class="row">
+                <div class="col-lg-4 col-nd-6 col-sn-12">
+                    <img src="../Multimedia/Images/art (2).jpeg" alt="Artículo 1"> Aro 1
+                    <div class="item6 wow animate__ animate__zoomIn animated" style="visibility: visible; animation-name: zoomIn;">
+                        <span class="animate__ animate__heartBeat">$xxx</span>
+                        <button type="button" class="btn btn-primary animate__ animate__zoomIn">Añadir al carrito</button>
+                    </div>
+                    </div>
+                <div class="col-lg-4 col-nd-6 col-sn-12">
+                    <img src="../Multimedia/Images//art (10).jpeg" alt="Artículo 2"> Aro 2
+                    <div class="item6 wow animate__ animate__zoomIn animated" style="visibility: visible; animation-name: zoomIn;">
+                        <span class="animate__ animate__heartBeat">$xxx</span>
+                        <button type="button" class="btn btn-primary animate__ animate__zoomIn">Añadir al carrito</button>
+                    </div>
                 </div>
-                <div class="Cat1__A2">
-                    <a href="#"></a>
-                    <img src="../Multimedia/Images/art piscis.jpeg" alt="Artículo 2"> Artículo 2
-                    <input type="submit" class="#" value="Agregar al carrito +">
-                </div> 
-                <div class="Cat1__A3">
-                    <a href="#"></a>
-                    <img src="../Multimedia/Images/Artcora.jpg" alt="Artículo 3"> Artículo 3
-                    <input type="submit" class="#" value="Agregar al carrito +">
+                <div class="col-lg-4 col-nd-6 col-sn-12">
+                    <img src="../Multimedia/Images/art (7).jpeg" alt="Artículo 3"> Aro 3
+                    <div class="item6 wow animate__ animate__zoomIn animated" style="visibility: visible; animation-name: zoomIn;">
+                        <span class="animate__ animate__heartBeat">$xxx</span>
+                        <button type="button" class="btn btn-primary animate__ animate__zoomIn">Añadir al carrito</button>
+                    </div>
                 </div>
-                <div class="Cat1__A4">
-                    <a href="#"></a>
-                    <img src="../Multimedia/Images/Conjunto nocturno.jpg" alt="Artículo 4"> Artículo 4
-                    <input type="submit" class="#" value="Agregar al carrito +">
-                </div>        
+                <div class="col-lg-4 col-nd-6 col-sn-12">
+                    <img src="../Multimedia/Images/argolla heart cubic x1.jpeg" alt="Artículo 3"> Aro 4
+                    <div class="item6 wow animate__ animate__zoomIn animated" style="visibility: visible; animation-name: zoomIn;">
+                        <span class="animate__ animate__heartBeat">$xxx</span>
+                        <button type="button" class="btn btn-primary animate__ animate__zoomIn">Añadir al carrito</button>
+                    </div>
+                </div>
             </div>
         </section>
-        <section>
-            <div class="Cat2T">
-                <h2>Aros</h2>
+        <section id="galeria" class="container">
+            <div class="text-center pt-5">
+                <h3 id="Otros">Otros</h3>
             </div>
-            <div class="Cat2">
-                <div class="Cat2__A1">
-                    <a href="#"></a>
-                    <img src="../Multimedia/Images/art (2).jpeg" alt="Artículo 1"> Artículo 1
-                    <input type="submit" class="#" value="Agregar al carrito +">
-                </div>
-                <div class="Cat2__A2">
-                    <a href="#"></a>
-                    <img src="../Multimedia/Images//art (10).jpeg" alt="Artículo 2"> Artículo 2
-                    <input type="submit" class="#" value="Agregar al carrito +">
-                </div> 
-                <div class="Cat2__A3">
-                    <a href="#"></a>
-                    <img src="../Multimedia/Images/art (7).jpeg" alt="Artículo 3"> Artículo 3
-                    <input type="submit" class="#" value="Agregar al carrito +">
-                </div>
-                <div class="Cat2__A4">
-                    <a href="#"></a>
-                    <img src="../Multimedia/Images/art (5).jpeg" alt="Artículo 4"> Artículo 4
-                    <input type="submit" class="#" value="Agregar al carrito +">
-                </div>        
-            </div>
-        </section>
-        <section>
-            <div class="Cat3T">
-                <h2>Otros</h2>
-            </div>
-            <div class="Cat3">
-                <div class="Cat3__A1">
-                    <a href="#"></a>
+            <div class="row">
+                <div class="col-lg-4 col-nd-6 col-sn-12">
                     <img src="../Multimedia/Images/art (0).jpeg" alt="Artículo 1"> Artículo 1
-                    <input type="submit" class="#" value="Agregar al carrito +">
+                    <div class="item6 wow animate__ animate__zoomIn animated" style="visibility: visible; animation-name: zoomIn;">
+                        <span class="animate__ animate__heartBeat">$xxx</span>
+                        <button type="button" class="btn btn-primary animate__ animate__zoomIn">Añadir al carrito</button>
+                    </div>
                 </div>
-                <div class="Cat3__A2">
-                    <a href="#"></a>
+                <div class="col-lg-4 col-nd-6 col-sn-12">
                     <img src="../Multimedia/Images/art (11).jpeg" alt="Artículo 2"> Artículo 2
-                    <input type="submit" class="#" value="Agregar al carrito +">
-                </div> 
-                <div class="Cat3__A3">
-                    <a href="#"></a>
-                    <img src="../Multimedia/Images/art (8).jpeg" alt="Artículo 3"> Artículo 3
-                    <input type="submit" class="#" value="Agregar al carrito +">
+                    <div class="item6 wow animate__ animate__zoomIn animated" style="visibility: visible; animation-name: zoomIn;">
+                        <span class="animate__ animate__heartBeat">$xxx</span>
+                        <button type="button" class="btn btn-primary animate__ animate__zoomIn">Añadir al carrito</button>
+                    </div>
                 </div>
-                <div class="Cat3__A4">
-                    <a href="#"></a>
-                    <img src="../Multimedia/Images/art (6).jpeg" alt="Artículo 4"> Artículo 4
-                    <input type="submit" class="#" value="Agregar al carrito +">
-                </div>        
-            </div>
+                <div class="col-lg-4 col-nd-6 col-sn-12">
+                    <img src="../Multimedia/Images/art (8).jpeg" alt="Artículo 3"> Artículo 3
+                    <div class="item6 wow animate__ animate__zoomIn animated" style="visibility: visible; animation-name: zoomIn;">
+                        <span class="animate__ animate__heartBeat">$xxx</span>
+                        <button type="button" class="btn btn-primary animate__ animate__zoomIn">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-nd-6 col-sn-12">
+                    <img src="../Multimedia/Images/collar suanito.jpeg" alt="Artículo 3"> Artículo 4
+                    <div class="item6 wow animate__ animate__zoomIn animated" style="visibility: visible; animation-name: zoomIn;">
+                        <span class="animate__ animate__heartBeat">$xxx</span>
+                        <button type="button" class="btn btn-primary animate__ animate__zoomIn">Añadir al carrito</button>
+                    </div>
+                </div>
         </section>
+        <!--el carrusel daría una vista previa de las promociones vigentes-->
+        <div class="carousel-item">
+            <img src="..." alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>...</h5>
+              <p>...</p>
+            </div>
+        </div>
     </main>
     <footer>
         <ul class="socialMedia">
@@ -149,6 +215,9 @@
         <div class="LeyendaFoot">
             <p>Copyright CD Accesorios - 2021. Todos los derechos reservados. | © Developed by Rodrigo González</p>
         </div> 
-    </footer>    
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
 </body>
 </html>

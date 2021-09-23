@@ -4,89 +4,57 @@
   font-family: "Comic Sans MS";
 }
 
-h2 {
-  background-color: white;
-  color: rgb(219,112,147);
-}
-
-a:link, a:visited, a:active {
-  text-decoration:none;
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  padding: 0%;
+  color: #db7093;
 }
 
 body {
   background-color: rgb(242, 242, 242);
 }
 
-.header {
-  display: grid;
-  grid-template-columns: 13vw 81vw;
-  grid-template-rows: 2.5vw 3vw;
-  flex-flow: column wrap;
-  background-color: rgb(219,112,147);
-  background-position: 0px;
+header {
   position: fixed;
-  width: 100vw;
-  z-index: 2;
   top: 0;
+  width: 100%;
+  z-index: 90;
 }
 
-.header__nav {
-  grid-column: 2 / 2;
-  background-color: rgb(219,112,147);
-  margin-top: 0.5vw;
-  left: 20%;
-  flex-wrap: nowrap;
-  flex-direction: row;
+.bg-light {
+  background-color: rgb(219, 112, 147) !important;
 }
 
 .header__logo {
   grid-column: 1;
-  height: 7vw;
+  height: 5vw;
   display: flex;
+  border-radius: 0.3vw;
 }
 
-.header__logo:hover {
-  animation: slide-in-left 1.5s cubic-bezier(0.25, 0.46, 0.47, 0.99) both;  
+.navbar-light .navbar-toggler {
+  background-color: white;
 }
 
-.header__logo img {
-  width: auto;
-  height: 5.5vw;
-  margin-left: 0vw;
-  animation: slide-in-left 1.5s cubic-bezier(0.25, 0.46, 0.47, 0.99) both;
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+  color: rgba(255, 255, 255, 0.9);
 }
 
-.header__nav__menu {
-  grid-area: nav__menu;
-  padding: 0px;
-  margin: 0.3rem;
-  list-style: none;
-}
-.header__nav__lista__menu {
-  grid-area: menu;
-  color: #fff;
-  margin: 8px;
-  margin-left: 0.4vw;
-  top: 3%;
-  font-size: 1.4vw;
-  font: icon;
+.btn:not(:disabled):not(.disabled) {
+  color: #db7093;
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 
-.header__nav__lista__menu:hover {
-  color: rgb(236 24 94);
-}
-
-.header__nav__lista {
-  display: inline;
-}
-
-.header__nav__buscador{
-  grid-column: 2;
-  padding: 0.2rem;
-  display: flex;
-  justify-content: flex-start;
-  align-content: stretch;
-  height: 2vw;
+.btn:not(:disabled):not(.disabled):hover {
+  color: #ffffff;
+  background-color: rgb(255, 0, 212);
+  border-color: rgb(255, 0, 212);;
 }
 
 .header__nav__buscador__pay {
@@ -95,6 +63,10 @@ body {
   grid-template-columns: 3vw 14vw;
   grid-template-rows: 2.5vw;
   align-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -114,8 +86,70 @@ body {
   margin: 2vw;
 }
 
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    flex-wrap: wrap;
+  }
+}
+
 main {
-  margin-top: 8vw;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-column: 2;
+  grid-row: 3;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h2 {
+  color: #db7093;
+  background-color: white;
+}
+
+.iconup {
+  width: 6rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.uno {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;     
+}
+
+.one {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+}
+
+.dos {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;  
+}
+
+.two {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+}
+
+.tres {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;    
+}
+
+.three {
+  grid-row-start: 3;
+  grid-column-start: 2;
 }
 
 .mediosdiv {
@@ -124,11 +158,45 @@ main {
   margin-bottom: 3vw;
 }
 
+#codpostal {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+}
+
 .medios {
   width: 5vw;
   margin-inline: 0.5vw;
   margin-top: 1vw;
   margin-bottom: 1vw;
+  background-color: white;
+}
+
+@media (min-width: 575.98px) {
+  .autop {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header__logo {
+    height: 10vw;
+  }
+  main {
+    margin-top: 18vw;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  .iconup {
+    display: none;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
 }
 
 footer {
@@ -164,6 +232,10 @@ footer {
 
 .socialMedia li a img:hover {
   width: 5vw;
+}
+
+footer p {
+  margin-top: 0.3rem;
 }
 
 .LeyendaFoot {

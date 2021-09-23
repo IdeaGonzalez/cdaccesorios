@@ -4,8 +4,11 @@
   font-family: "Comic Sans MS";
 }
 
-a:link, a:visited, a:active {
-  text-decoration:none;
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  padding: 0%;
 }
 
 body {
@@ -16,10 +19,11 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 90;
 }
 
 .bg-light {
-  background-color: rgb(219,112,147) !important;
+  background-color: rgb(219, 112, 147) !important;
 }
 
 .header__logo {
@@ -33,7 +37,10 @@ header {
   background-color: white;
 }
 
-.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -45,8 +52,8 @@ header {
 
 .btn:not(:disabled):not(.disabled):hover {
   color: #ffffff;
-  background-color: rgb(236 24 94);
-  border-color: rgb(236 24 94);
+  background-color: rgb(255, 0, 212);
+  border-color: rgb(255, 0, 212);;
 }
 
 .header__nav__buscador__pay {
@@ -57,8 +64,8 @@ header {
   align-content: center;
   align-items: center;
   flex-flow: row wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -79,10 +86,14 @@ header {
 }
 
 @media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse {  
+  .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
     flex-wrap: wrap;
+  }
+
+  h3 {
+    display: none;
   }
 }
 
@@ -97,8 +108,7 @@ main {
   grid-auto-rows: 1fr 1fr;
   gap: 0 2%;
   grid-auto-flow: row;
-  grid-template-areas:
-    "SeccionOne__P1 SeccionOne__P2 SeccionOne__P3";
+  grid-template-areas: "SeccionOne__P1 SeccionOne__P2 SeccionOne__P3";
   width: 100vw;
   overflow: hidden;
   font-family: "Comic Sans MS";
@@ -117,7 +127,7 @@ main {
   margin-bottom: 5vh;
   font-size: 25px;
   color: #FFFFFF;
-  background-color: rgb(219,112,147);
+  background-color: rgb(219, 112, 147);
   padding: 5px;
   border-radius: 15px;
   transition: all 0.3s;
@@ -134,7 +144,7 @@ main {
   margin-bottom: 5vh;
   font-size: 25px;
   color: #FFFFFF;
-  background-color: rgb(219,112,147);
+  background-color: rgb(219, 112, 147);
   padding: 5px;
   border-radius: 15px;
   transition: all 0.3s;
@@ -150,7 +160,7 @@ main {
   margin-bottom: 5vh;
   font-size: 25px;
   color: #FFFFFF;
-  background-color: rgb(219,112,147);
+  background-color: rgb(219, 112, 147);
   padding: 5px;
   border-radius: 15px;
   transition: all 0.3s;
@@ -161,15 +171,15 @@ main {
 }
 
 .SeccionOne__P2:hover {
-  width: 35vw; 
+  width: 35vw;
 }
 
 .SeccionOne__P3:hover {
   width: 35vw;
 }
 
-.SeccionOneTitulo {
-  animation: 3s infinite alternate slidein;
+.Titulo {
+  width: 100%;
 }
 
 h1 {
@@ -185,7 +195,7 @@ h1 {
   display: flex;
   align-items: center;
   height: auto;
-  margin: 1rem;
+  margin: 0.5rem;
   flex-direction: column;
   justify-content: center;
 }
@@ -195,7 +205,8 @@ h1 {
   font-family: "Comic Sans MS";
   font-size: 1.5rem;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .SeccionTwo {
@@ -205,8 +216,7 @@ h1 {
   grid-auto-rows: 1fr 1fr;
   gap: 0 2%;
   grid-auto-flow: row;
-  grid-template-areas:
-    "SeccionTwo__P1 SeccionTwo__P2 SeccionTwo__P3";
+  grid-template-areas: "SeccionTwo__P1 SeccionTwo__P2 SeccionTwo__P3";
   width: 100vw;
   overflow: hidden;
   font-family: "Comic Sans MS";
@@ -225,7 +235,7 @@ h1 {
   margin-bottom: 5vh;
   font-size: 25px;
   color: #FFFFFF;
-  background-color: rgb(219,112,147);
+  background-color: rgb(219, 112, 147);
   padding: 5px;
   border-radius: 15px;
   transition: all 0.3s;
@@ -242,13 +252,13 @@ h1 {
   margin-bottom: 5vh;
   font-size: 25px;
   color: #FFFFFF;
-  background-color: rgb(219,112,147);
+  background-color: rgb(219, 112, 147);
   padding: 5px;
   border-radius: 15px;
   transition: all 0.3s;
 }
 
-.SeccionTwo__P3 { 
+.SeccionTwo__P3 {
   grid-column: 3;
   display: flex;
   flex-direction: column;
@@ -258,7 +268,7 @@ h1 {
   margin-bottom: 5vh;
   font-size: 25px;
   color: #FFFFFF;
-  background-color: rgb(219,112,147);
+  background-color: rgb(219, 112, 147);
   padding: 5px;
   border-radius: 15px;
   transition: all 0.3s;
@@ -269,7 +279,7 @@ h1 {
 }
 
 .SeccionTwo__P2 {
-  grid: SeccionOne__P2;  
+  grid: SeccionOne__P2;
 }
 
 .SeccionTwo__P3 {
@@ -285,19 +295,76 @@ h1 {
   justify-content: center;
 }
 
-a:hover {
-  color: rgb(236 24 94);
+.carousel {
+  position: relative;
+  margin: 6rem;
+  margin-top: 0.3rem;
+  padding: 0.3rem;
+  background-color: palevioletred;
+  z-index: 2;
 }
 
-@media (max-width: 575.98px){
+.w-100 {
+  height: 30rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  color: #db7093;
+  background-color: whitesmoke;
+  width: 50%;
+  height: 2rem;
+  left: 30%;
+  right: 30%;
+  top: 1rem;
+  position: relative;
+}
+
+a:hover {
+  color: rgb(255, 0, 212);
+}
+
+@media (min-width: 575.98px) {
+  .SeccionTwo {
+    display: none;
+  }
+  .SeccionTwoTitulo {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
   .header__logo {
     height: 10vw;
   }
+
   main {
     margin-top: 18vw;
   }
+
   h1 {
     font-size: 1.6rem;
+  }
+
+  .w-100 {
+    height: 15rem;
+  }
+
+  .carousel {
+    position: relative;
+    margin: 0rem;
+    margin-top: 0.3rem;
+    padding: 0.3rem;
+    background-color: palevioletred;
+    z-index: 2;
+  }
+
+  .SeccionTwo {
+    display: none;
+  }
+
+  h2 {
+    display: none;
   }
 }
 
@@ -308,9 +375,7 @@ footer {
   height: auto;
   grid-auto-rows: 1fr 1fr;
   gap: 0 2%;
-  grid-template-areas:
-    "SocialMedia"
-    "LeyedaFoot";
+  grid-template-areas: "SocialMedia" "LeyedaFoot";
 }
 
 .socialMedia {
@@ -325,6 +390,10 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   list-style: none;
+}
+
+footer p {
+  margin-top: 0.3rem;
 }
 
 .socialMedia li a img {
